@@ -1,0 +1,10 @@
+{
+  "name": "SwiftDrop Transport",
+  "description": "Comprehensive logistics, courier, company, and delivery management platform for Tanzania and East Africa with multi-role dashboards, pricing engine, identity verification vault, live GPS tracking, and double-entry accounting",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

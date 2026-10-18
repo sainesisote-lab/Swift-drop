@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-navy: #14213D;
+  --color-brand-navy-dark: #0c1527;
+  --color-brand-navy-light: #1e2f52;
+  --color-brand-blue: #2563EB;
+  --color-brand-blue-hover: #1D4ED8;
+  --color-brand-orange: #FF7A00;
+  --color-brand-orange-hover: #E66E00;
+  --color-brand-green: #16A34A;
+  --color-brand-green-light: #DCFCE7;
+  --color-brand-purple: #7C3AED;
+  --color-brand-purple-light: #F3E8FF;
+  --color-brand-gray: #F3F4F6;
+  --color-brand-amber: #F59E0B;
+  --color-brand-amber-light: #FEF3C7;
+  --color-brand-red: #DC2626;
+  --color-brand-red-light: #FEE2E2;
+
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    background-color: #F3F4F6;
+    color: #14213D;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom primary and secondary button design tokens */
+.btn-primary-orange {
+  background-color: #FF7A00;
+  color: #FFFFFF;
+  font-weight: 700;
+  transition: all 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-primary-orange:hover {
+  background-color: #E66E00;
+  box-shadow: 0 4px 14px 0 rgba(255, 122, 0, 0.35);
+}
+.btn-primary-orange:active {
+  transform: translateY(1px);
+}
+
+.btn-secondary-blue {
+  background-color: #2563EB;
+  color: #FFFFFF;
+  font-weight: 600;
+  transition: all 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-secondary-blue:hover {
+  background-color: #1D4ED8;
+}
+
+.btn-outline-navy {
+  border: 1.5px solid #14213D;
+  color: #14213D;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-outline-navy:hover {
+  background-color: #14213D;
+  color: #FFFFFF;
+}
